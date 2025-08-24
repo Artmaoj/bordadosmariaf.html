@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Helvetica, sans-serif
+}
+
+/*Personalizando body*/
+body{
+    background: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    line-height: 1.4;  
+}
+
+/*header personalizado*/
+header{
+ background-position: center;
+ font-family:Arial, Helvetica, sans-serif;
+ text-align: center;
+ padding:20px;
+ border-bottom: 3px solid #e6e6e6;
+ background: url(https://img.odcdn.com.br/wp-content/uploads/2023/05/Homem-de-Ferro-voando.jpg);
+}
+header .figurinha{
+    height:150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #e6a27e;
+}
+header h1{
+     font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #8b4a2f;
+}
+header p{
+    font-size: 1.2rem;
+    color: #5a3320;
+}
+
+/*menu personalizado*/
+    .menuprincipal{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    background-color: #B59F92;
+    text-align: center;
+}
+.menuprincipal li{
+    display:inline;
+    padding: 2%;
+}
+.menuprincipal li a{
+    color: black;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+}
+.menuprincipal li a:hover{
+    background-color: #565551;
+}
+
+/*sessão personalizada*/
+section {
+    text-align: center;
+    padding: 20px;
+    max-width: 900px;
+    border-top: 2px;
+    margin: 0 auto 40px auto;
+}
+
+section h2.titulo {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #8b4a2f;
+    margin-top: 20px;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #5a3320;
+}
+
+
+section ul {
+    list-style: disc;
+    margin-top: 10px;
+    color: #5a3320;
+}
+
+
+.imagens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 55px;
+}
+.imagens img {
+    border: 3px solid black;
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2), -4px -4px 15px rgba(0, 0, 255, 0.2);
+}
+.imagens img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.titulo{
+    font-size: x-large;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.txtgaleria{
+    margin-bottom: 20px;
+}
+
+.sobremim {
+    font-size: medium;
+    font-family: Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+footer a{
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: bold;
+    color:#000000;
+}
+
+.rodapé{
+    text-align: left;
+    list-style-type: none;
+}
+.rodapé a img.logo-rodape {
+  width: 40px;    
+  height: 40px;
+  border-radius: 5px; 
+  transition: transform 0.3s ease;
+}
+
+.rodapé a img.logo-rodape:hover {
+  transform: scale(1.1); 
+}
+@media screen and (max-width: 768px) {
+    div.imagens {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul.menuprincipal {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/*formulario personalizado*/
+form.formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #e6a27e;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #e6a27e;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #d78c62;
+}
