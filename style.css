@@ -147,12 +147,15 @@ section ul {
 }
 
 
+footer{
+    background-color: #000000;
+    
+}
 footer a{
     text-decoration: none;
     list-style-type: none;
     font-weight: bold;
     color:#000000;
-
 }
 
 .rodapé{
