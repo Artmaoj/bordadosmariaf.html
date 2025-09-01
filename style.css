@@ -158,9 +158,19 @@ footer a{
     color:#000000;
 }
 
-.rodapé{
-    text-align: left;
+footer {
+    background-color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.rodapé {
+    display: flex;
+    justify-content: center;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 .rodapé a img.logo-rodape {
   width: 40px;    
@@ -265,4 +275,19 @@ form button:hover {
 }
 .subtitle{
     text-align: center;
+}
+@media (max-width: 768px) {
+    .rodapé {
+        flex-direction: column;
+    }
+
+    .rodapé a img.logo-rodape {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+        padding: 0 10px;
+    }
 }
